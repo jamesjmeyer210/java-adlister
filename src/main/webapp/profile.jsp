@@ -5,6 +5,6 @@
 
 </head>
 <body>
-    <h1>Profile</h1>
+    <h1>Welcome Admin!</h1>
 </body>
 </html>
