@@ -6,7 +6,7 @@
 </head>
 <body>
     <h1>Login</h1>
-    <form method="get" action="/profile.jsp">
+    <form method="POST" action="/login.jsp">
         Username:<br>
         <input type="text"><br>
         Password:<br>
