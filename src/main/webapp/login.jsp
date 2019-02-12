@@ -6,16 +6,18 @@
 
 </head>
 <body>
+    <%@ include file="partials/navbar.jsp" %>
     <h1>Login</h1>
 
     <%
-    if(request.getParameter("username").equals("admin") && request.getParameter("password").equals("password")){
-        response.sendRedirect("/profile.jsp"); %>
-        <h1>Welcome Admin</h1>
-    <%
-    } else {%>
-        <h1>You're not Admin</h1>
-    <%}%>
+        if(request.getParameter("username") != null){
+            if(request.getParameter("username").equals("admin") && request.getParameter("password").equals("password")){
+                response.sendRedirect("/profile.jsp");
+            } else {
+            %><h1>You're not Admin</h1><%
+            }
+        }
+    %>
 
     <form method="POST" action="/login.jsp">
         Username:<br>
